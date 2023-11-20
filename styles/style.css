@@ -261,7 +261,7 @@
 }
 
 /* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
-.staff_cards {
+.staff__cards {
   max-width: 760px;
   margin: 68px auto auto;
   display: flex;
