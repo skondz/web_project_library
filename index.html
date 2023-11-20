@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,6 @@
   </head>
 
   <body>
-    <!-- Envuelve todo el contenido de la página en un nuevo div con la clase page Recuerde agregar la etiqueta de cierre -->
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -19,22 +18,25 @@
             alt="Triple Peaks Library Logo"
             class="nav__logo"
           />
-          <!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Eventos</a>
+              <a href="#proximos-eventos" class="nav__link">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Preferidos de nuestro staff</a>
+              <a href="#preferidos" class="nav__link"
+                >Preferidos de nuestro staff</a
+              >
             </li>
             <li>
-              <a class="nav__link">Hazte miembro</a>
+              <a href="#membresia" class="nav__link">Hazte miembro</a>
             </li>
             <li>
-              <a class="nav__link">Sobre nosotros</a>
+              <a href="#sobre-la-bibllioteca" class="nav__link"
+                >Sobre nosotros</a
+              >
             </li>
             <li>
-              <a class="nav__link">Contactos</a>
+              <a href="#contacto" class="nav__link">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -44,17 +46,17 @@
           amplía tus conocimientos sobre desarrollo, o simplemente ven a
           trabajar o estudiar con nosotros. ¡Este es un lugar genial para
           estudiantes!
+          <img
+            src="./images/inside_the_library.png"
+            alt="Illustration 'Inside the library'"
+            class="header__image"
+          />
         </p>
-        <!-- ----------------------------------------------------------------- -->
-        <!--    No descomentar hasta la etapa 2 del proyecto.        -->
-        <!-- ----------------------------------------------------------------- -->
-        <img
-          src="./images/inside_the_library.png"
-          alt="Illustration 'Inside the library'"
-          class="header__image"
-        />
+
         <div class="header__footer">
-          <a class="header__link">Sobre la librería &darr;</a>
+          <a href="#sobre-la-bibllioteca" class="header__link"
+            >Sobre la librería &darr;</a
+          >
           <p class="header__address">
             Avenida del Éxito 200, Ciudad Triple Peaks
           </p>
@@ -62,10 +64,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
-          <!-- --------------------------------------------------------------- -->
-          <!--    No descomentar hasta la etapa 2 del proyecto.      -->
-          <!-- --------------------------------------------------------------- -->
+        <section class="events" id="proximos-eventos">
           <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
             <h3 class="events__title">
@@ -96,7 +95,7 @@
             </p>
             <a href="#" class="events__more">Más eventos &rarr;</a>
           </div>
-          <!-- Empieza a crear la composición aquí. -->
+
           <div class="events__cover">
             <img
               src="./images/cafe.png"
@@ -146,10 +145,7 @@
           </div>
         </section>
 
-        <section class="staff">
-          <!-- --------------------------------------------------------------- -->
-          <!--   No descomentar hasta la etapa final del proyecto.         -->
-          <!-- --------------------------------------------------------------- -->
+        <section class="staff" id="preferidos">
           <h2 class="staff__title">Preferidos de nuestro staff</h2>
           <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
           <ul class="staff_cards">
@@ -226,10 +222,7 @@
           </ul>
         </section>
 
-        <section class="membership">
-          <!-- --------------------------------------------------------------- -->
-          <!--   No descomentar hasta la etapa final del proyecto.         -->
-          <!-- --------------------------------------------------------------- -->
+        <section class="membership" id="membresia">
           <h2 class="membership__title">
             ¡Convertirse en miembro de la biblioteca es muy fácil!
           </h2>
@@ -287,29 +280,73 @@
           </ul>
         </section>
 
-        <section class="about">
-          <!-- --------------------------------------------------------------- -->
-          <!--      No descomentar hasta la etapa final del proyecto.      -->
-          <!-- --------------------------------------------------------------- -->
-          <!--<h2 class="about__title">Sobre la biblioteca</h2>
-        <div class="about__content">
-          <p class="about__paragraph">
-            Las bibliotecas son centros imprescindibles en prácticamente cualquier ciudad, y TripleTen no es la excepción. Abrió sus puertas por primera vez en 2018, ¡cuando nuestra pequeña ciudad daba la bienvenida a sus primeros habitantes!
-          </p>
-          <p class="about__paragraph">
-            Desde su apertura inicial, la biblioteca ha recibido casi 342 visitantes cada mes. ¡Es casi el 50% de nuestra población! Hasta ahora, la mayoría de nuestros ciudadanos han disfrutado de leer libros y hacer uso de nuestros amplios recursos en línea.
-          </p>
-          <p class="about__paragraph">
-            La biblioteca toma su nombre en honor a Joan Feynman, una astrofísica estadounidense y la primera mujer en ser elegida como oficial de la Unión Geofísica Americana.
-          </p>
-        </div>
-        <div class="about__circle"></div> -->
+        <section class="about" id="sobre-la-bibllioteca">
+          <h2 class="about__title">Sobre la biblioteca</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Las bibliotecas son centros imprescindibles en prácticamente
+              cualquier ciudad, y TripleTen no es la excepción. Abrió sus
+              puertas por primera vez en 2018, ¡cuando nuestra pequeña ciudad
+              daba la bienvenida a sus primeros habitantes!
+            </p>
+            <p class="about__paragraph">
+              Desde su apertura inicial, la biblioteca ha recibido casi 342
+              visitantes cada mes. ¡Es casi el 50% de nuestra población! Hasta
+              ahora, la mayoría de nuestros ciudadanos han disfrutado de leer
+              libros y hacer uso de nuestros amplios recursos en línea.
+            </p>
+            <p class="about__paragraph">
+              La biblioteca toma su nombre en honor a Joan Feynman, una
+              astrofísica estadounidense y la primera mujer en ser elegida como
+              oficial de la Unión Geofísica Americana.
+            </p>
+          </div>
+          <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
-        <!-- ----------------------------------------------------------------- -->
-        <!--      No descomentar hasta la etapa final del proyecto.        -->
-        <!-- ----------------------------------------------------------------- -->
+      <footer class="footer" id="contacto">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              src="./images/logo-white.svg"
+              alt="TripleTen Logo"
+              class="footer__logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h2 class="footer__column-heading">Horas</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">Lunes a viernes: 9am – 8pm</li>
+              <li class="footer__list-item">Sábados y domingo:10am -6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__column-heading">Redes Sociales</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item footer__column-link">
+                <a href="#" class="footer__column-link"
+                  ><img
+                    src="./images/facebook_white.svg"
+                    alt="Enlace a facebook"
+                    class="footer__social-icon"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li class="footer__list-item footer__column-link">
+                <a href="#" class="footer__column-link"
+                  ><img
+                    src="./images/instagram_white.svg"
+                    alt="Enlace a Instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2023 Fernando Escobar</p>
       </footer>
     </div>
   </body>
