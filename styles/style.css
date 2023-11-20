@@ -266,7 +266,7 @@
   margin: 68px auto auto;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 40px;
+  gap: 40px;
   justify-content: space-between;
   list-style-type: none;
   padding-left: 0;
